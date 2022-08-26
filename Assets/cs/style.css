@@ -1,3 +1,8 @@
+.header {
+    display: flex;
+    height: 40px;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -16,4 +21,34 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+}
+
+.main{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.time{
+    margin-left: 90%;
+}
+
+@media screen and (max-width: 1090px) {
+    .time{
+        margin-left: 80%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .time{
+        margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .time{
+        display: inline;
+    }
+    .header{
+        display: inline;
+    }
 }

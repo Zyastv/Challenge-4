@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <button id="highscores" class="highscores"> Highscores ☰ </button>
         <section id="modal" class="modal">
             <div id="modal-content" class="modal-content">
@@ -18,9 +18,16 @@
             </ul>
             </div>
         </section>
+        <h1 class="time"></h1>
     </header>
-    <main>
-        
+    <main class="main">
+        <h1 id="question" class="question">Coding Quiz Challenge</h1>
+        <p id="info" class="info">Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
+        <button id="start-button" class="start-button">Start Quiz</button>
+        <ul id="answers" class="answers">
+            
+        </ul>
+
     </main>
 </body>
 <script src="./Assets/js/script.js"></script>
