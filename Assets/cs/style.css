@@ -1,33 +1,34 @@
-.header {
-    display: flex;
-    height: 40px;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto;  
-    background-color: rgba(0,0,0,0.4); 
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
 
 .main{
     text-align: center;
     margin-top: 15%;
 }
 
+.custom-card{
+    width: 1000px;
+}
+
+.confirm-buttons{
+    display: none;
+}
+
+.answers{
+    display: none;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-custom{
+    display: none;
+}
+
+.correct{
+    display: none;
+}
+
+.wrong{
+    display: none;
+}
 .time{
     margin-left: 90%;
 }

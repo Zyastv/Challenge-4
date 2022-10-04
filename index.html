@@ -4,30 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/cs/style.css" />
     <title>Javascript Quiz</title>
 </head>
 
 <body>
-    <header class="header">
-        <button id="highscores" class="highscores"> Highscores ☰ </button>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+        <button id="highscores" class="btn btn-secondary"> Highscores ☰ </button>
         <section id="modal" class="modal">
             <div id="modal-content" class="modal-content">
             <ul id="scores" class="scores">
-                <li></li>
+                
             </ul>
             </div>
         </section>
         <h1 class="time"></h1>
+        </nav>
     </header>
-    <main class="main">
-        <h1 id="question" class="question">Coding Quiz Challenge</h1>
-        <p id="info" class="info">Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
-        <button id="start-button" class="start-button">Start Quiz</button>
-        <ul id="answers" class="answers">
-            
-        </ul>
-
+    <main class="bg-light card custom-card main mx-auto p-5">
+        <section id="quiz" class="card-body">
+            <h1 id="question" class="question">Coding Quiz Challenge</h1>
+            <p id="info" class="info">Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
+            <button id="start-button" class="btn btn-primary">Start Quiz</button>
+            <input id="initials" type="text" class="form-control input-custom" placeholder="Initials" aria-label="Username" aria-describedby="basic-addon1">
+            <section id="confirm-buttons" class="confirm-buttons mx-2">
+                <button class="btn btn-primary btn-lg">Save</button>
+                <button class="btn btn-primary btn-lg">Restart</button>
+            </section>
+            <ol id="answers" class="answers">
+                <li>
+                <button id="a" class="btn btn-info btn-lg mx-0 my-2"></button>
+                </li>
+                <li>
+                <button id="b" class="btn btn-info btn-lg mx-0 my-2"></button>
+                </li>
+                <li>
+                <button id="c" class="btn btn-info btn-lg mx-0 my-2"></button>
+                </li>
+                <li>
+                <button id="d" class="btn btn-info btn-lg mx-0 my-2"></button>
+                </li>
+            </ol>
+        </section>
+        <span id="correct" class="correct alert-success text-align-center">Correct!</span>
+        <span id="wrong" class="wrong alert-danger text-align-center">Wrong!</span>
     </main>
 </body>
 <script src="./Assets/js/script.js"></script>
