@@ -159,7 +159,7 @@ function saveScore(event){
     var selectedButton = event.target.textContent
     
     if(selectedButton == 'Save'){
-        if(scoreIndex>5){
+        if(scoreIndex>=5){
             scoreIndex = 0;
         }
         initialEl = document.getElementById('initials').value
